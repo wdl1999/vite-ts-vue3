@@ -1,1 +1,82 @@
-<mxfile host="app.diagrams.net" modified="2021-08-03T06:08:21.340Z" agent="5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" version="14.9.3" etag="Aki_NmSLNcYQr7m4hhFV" type="github"><diagram id="-9YmKGkhsrs5FqviCqAm">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-03T06:08:55.721Z" agent="5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36" etag="QkeZGwNyBvhYBkNPkk3l" version="14.9.3" type="github">
+  <diagram id="-9YmKGkhsrs5FqviCqAm" name="Page-1">
+    <mxGraphModel dx="1414" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VZHS6qJboawIjnJRVNmN-1" value="所有用户停留时长统计&lt;br&gt;（common/report 接口）" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="115" y="45" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-2" value="进到做硬装-3d场景" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="90" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-3" value="起始点" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="50" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-4" value="终止点" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="50" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-5" value="退出做硬装-3d场景" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="90" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-6" value="材质编辑器&lt;br&gt;停留时长" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="170" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-7" value="做硬装-3d&lt;br&gt;停留时长" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="90" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-8" value="进入材质编辑器" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="175" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-9" value="离开材质编辑器" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="505" y="175" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-10" value="进入渲染设置界面" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="250" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-11" value="1、进入效果相册&lt;br&gt;2、进入自定义灯光&lt;br&gt;3、关闭渲染设置界面" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="495" y="220" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-12" value="渲染停留时长" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="250" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-13" value="1、进入效果图册&lt;br&gt;2、完成设置&lt;br&gt;3、返回渲染设置" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="505" y="305" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-14" value="&lt;u&gt;0&lt;/u&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="320" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-15" value="调灯光停留时长" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="320" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-16" value="平面停留时长&lt;br&gt;（container2d）" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="400" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-17" value="1、进入编辑器&lt;br&gt;2、从别的场景进入平面" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="400" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-18" value="1、进入顶面/3d/漫游&lt;br&gt;2、进入渲染&lt;br&gt;3、进入相册&lt;br&gt;4、进入做硬装" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="505" y="380" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-19" value="3d场景停留时长&lt;br&gt;（container3d）" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="485" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-20" value="1、进入3d（包括漫游）" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="490" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-21" value="1、进入顶面/平面&lt;br&gt;2、进入渲染&lt;br&gt;3、进入相册&lt;br&gt;4、进入做硬装&lt;br&gt;5、生成橱柜动线&lt;br&gt;&lt;u&gt;进入材质编辑器没有停止计时&lt;/u&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="485" y="470" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-22" value="剖面编辑器" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="574.5" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-23" value="&lt;u&gt;有代码 无实际触发&lt;/u&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="305" y="575" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VZHS6qJboawIjnJRVNmN-24" value="&lt;u&gt;有代码 无实际触发&lt;/u&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="575" width="110" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
