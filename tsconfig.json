@@ -17,9 +17,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+  //   "typeRoots": [
+  //     "node_modules/@types",
+  //     "typings"
+  // ],
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  // 指定被编译的文件-编译src、typing下的文件
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "typings/**/*.ts"],
+  // 引用-专门用于编译vite.config.js
   "references": [{ "path": "./tsconfig.node.json" }],
   "exclude": ["node_modules"]
 }
