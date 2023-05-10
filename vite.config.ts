@@ -1,25 +1,34 @@
+// 开发环境下，vite会在浏览器直接请求需要的文件，需要浏览器支持ESM，因为vite不支持commonjs
 import { defineConfig, loadEnv } from "vite";
-import process from "process";
+import process from "process"; // vite中访问node进程相关信息
 import _ from "lodash";
 import vue from "@vitejs/plugin-vue";
-// https://vitejs.dev/config/
+import path from "path";
 
-// vite.config.js中访问env文件
-const envResolve = (mode) => {
-  // process.cwd()获取nodejs进程当前工作目录
-  return loadEnv(mode, process.cwd());
-};
-
-const getEnv = function (env) {
-  // process.argv 属性返回一个数组，这个数组包含了启动Node.js进程时的命令行参数
-  // last()返回数组最后一个元素
-  return envResolve(_.last(process.argv))[env];
-};
-
-export default defineConfig({
-  plugins: [vue()],
-  server: {
-    port: Number(getEnv("VITE_PORT")) || 8081,
-    // host: import.meta.env.HOST,
-  },
+export default defineConfig(({ command, mode, ssrBuild }) => {
+  // 设置第三个参数为 '' 来加载所有环境变量，而不管是否有 `VITE_` 前缀
+  const env = loadEnv(mode, process.cwd(), "");
+  // console.log("1111 env", env);
+  return {
+    base: env.DEV ? "/" : "https://tumaxadmin.to8to.com/",
+    define: {
+      __APP_VERSION__: "1.0", // 只能定义常量 页面获取到的__APP_VERSION__是number类型的
+    },
+    plugins: [vue()],
+    server: {
+      port: Number(env.VITE_PORT) || 8081,
+      host: env.VITE_HOST,
+      hot: true,
+    },
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, "src"),
+      },
+    },
+    preview: {
+      port: Number(env.VITE_PORT) || 8081,
+      host: env.VITE_HOST,
+    },
+    build: {},
+  };
 });

@@ -12,18 +12,32 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
+    // 要么在script标签上加lang=“ts”，以ts模块解析，要么加上allowJs
+    "allowJs": true,
+    
+    // 启动装饰器功能
+    "experimentalDecorators": true,
+
+    // ts解析别名
+    // baseUrl + path = ./src/*
+    "baseUrl": ".",
+    // 设置路径映射
+    "paths":{
+      "@/*":["src/*"]
+    },
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    // 编译过程中需要引入的库文件的列表
   //   "typeRoots": [
   //     "node_modules/@types",
   //     "typings"
   // ],
   },
-  // 指定被编译的文件-编译src、typing下的文件
+  // ts管理的文件-编译src、typing下的文件
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "typings/**/*.ts"],
   // 引用-专门用于编译vite.config.js
   "references": [{ "path": "./tsconfig.node.json" }],
