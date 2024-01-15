@@ -1,12 +1,10 @@
-<script setup lang="ts">
-import HelloWorld from "@/components/HelloWorld.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
     <div class="test red-border">测试$bgColor导入并使用</div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <router-view> </router-view>
 </template>
 
 <style scoped lang="scss">
