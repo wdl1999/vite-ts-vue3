@@ -14,9 +14,13 @@ jobs:
         uses: actions/checkout@v2 # GitHub 官方提供的动作，将代码克隆到该工作流程的虚拟环境中
 
       - name: Set up Node.js environment
-        uses: actions/setup-node@v2 # GitHub 官方提供的动作
-        with:
-          node-version: "v16.16.0"
+        run: |
+          nvm list
+          nvm use 16.16.0
+          node --version
+        # uses: actions/setup-node@v2 # GitHub 官方提供的动作
+        # with:
+        #   node-version: "v16.16.0"
 
       - name: Install dependencies
         run: npm ci # 类似于npm install，但针对 CI 环境进行了优化
