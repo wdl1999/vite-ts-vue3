@@ -6,7 +6,8 @@ on:
 
 jobs:
   test-and-lint:
-    runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest # GitHub 官方提供的runner
+    runs-on: self-hosted # 自定义的runner
 
     steps:
       - name: Checkout repository
