@@ -3,7 +3,7 @@ import "./style.css";
 import App from "./App.vue";
 import "@/styles/base.scss";
 import routes from "@/routes/index";
-import { puppeteer } from 'puppeteer';
+// import { puppeteer } from 'puppeteer';
 import { createPinia } from "pinia";
 import { createRouter, createWebHashHistory } from "vue-router";
 // 使用import.meta.env可以获取默认的环境变量以及.env中以VITE_开头的环境变量

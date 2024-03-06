@@ -1,0 +1,22 @@
+name: CI Workflow
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  test-and-lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2 # GitHub 官方提供的动作，将代码克隆到该工作流程的虚拟环境中
+
+      - name: Set up Node.js environment
+        uses: actions/setup-node@v2 # GitHub 官方提供的动作
+        with:
+          node-version: "16"
+
+      - name: Install dependencies
+        run: npm ci # 类似于npm install，但针对 CI 环境进行了优化
+·
