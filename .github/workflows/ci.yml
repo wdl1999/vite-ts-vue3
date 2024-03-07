@@ -13,18 +13,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2 # GitHub 官方提供的动作，将代码克隆到该工作流程的虚拟环境中
 
-      - name: Verify NVM Version
+      - name: Verify NVM Version & Set up Node.js environment
         run: | # 运行代码块
           export NVM_DIR="$HOME/.nvm"
           echo $NVM_DIR
           [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
           [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
           nvm list
           nvm use 16.16.0
           node --version
-        # uses: actions/setup-node@v2 # GitHub 官方提供的动作
-        # with:
-        #   node-version: "v16.16.0"
+
+      # -s 参数用于检查指定文件是否为空
+      # . 是shell的内建命令，即点命令，用于读取指定的脚本文件
+      # bash_completion是nvm的脚本补全文件
+      # nvm.sh为nvm的初始化脚本
+
+      # uses: actions/setup-node@v2 # GitHub 官方提供的动作
+      # with:
+      #   node-version: "v16.16.0"
 
       - name: Install dependencies
         run: npm ci # 类似于npm install，但针对 CI 环境进行了优化
