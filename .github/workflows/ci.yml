@@ -13,6 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2 # GitHub 官方提供的动作，将代码克隆到该工作流程的虚拟环境中
 
+      - name: Verify NVM Version
+        run: | # 运行代码块
+          export NVM_DIR="$HOME/nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
       - name: Set up Node.js environment
         run: |
           nvm list
