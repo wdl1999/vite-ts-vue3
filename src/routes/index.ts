@@ -5,7 +5,6 @@ const appRoutes: RouteRecordRaw[] = [
         path: "/helloWorld",
         name: "helloWorld",
         component: () => import("@/components/HelloWorld.vue"),
-
     },
 ];
 
